@@ -1,0 +1,5 @@
+arrow==0.10.0
+requests==2.13.0
+selenium==2.48.0
+splinter==0.7.3
+tldextract==2.0.2
