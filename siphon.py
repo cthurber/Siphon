@@ -1,5 +1,7 @@
+import os
 import time
 from sys import argv
+from functools import partial
 from retrieve import save_page
 from multiprocessing import Pool
 
@@ -26,7 +28,7 @@ def main():
     if len(args) > 1:
         path = args[1]
     else:
-        path = "./data"
+        path = "./"
 
     start_time = time.time()
     pool = Pool(processes=16)

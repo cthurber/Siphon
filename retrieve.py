@@ -26,7 +26,7 @@ def load_useragents(filename):
     return user_agents
 
 # Returns a random User Agent for our browser given a file with User Agents
-def get_useragent(filename = "inputs/user_agents.txt"):
+def get_useragent(filename = "user_agents.txt"):
     user_agents = load_useragents(filename)
     log_state = "Selected User Agent:"
 
@@ -83,8 +83,6 @@ def make_filename(url):
 # TODO - Clean up URL stripping to config/json
 # Saves page at 'url' to 'location'
 def save_page(url, location = "./data"):
-    if not os.path.exists(location):
-        os.makedirs(location)
 
     if "bing.com" in url:
         return False
